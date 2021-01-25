@@ -1,0 +1,8 @@
+{
+  "name": "blog-monorepo",
+  "author": "KwonYG <andamirocll@gmail.com>",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}

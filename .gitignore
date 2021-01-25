@@ -1,0 +1,13 @@
+node_modules
+
+# macOS Files
+.DS_Store
+
+# build files
+.next/
+build/
+
+#env
+.env
+.env.build
+.env.development
