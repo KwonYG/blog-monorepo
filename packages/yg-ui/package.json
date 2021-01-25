@@ -2,5 +2,8 @@
     "name": "@blog-monorepo/yg-ui",
     "version": "1.0.0",
     "main": "index.js",
-    "license": "MIT"
+    "license": "MIT",
+    "scripts": {
+        "test": "echo test $npm_package_name"
+    }
   }
