@@ -9,6 +9,9 @@
     "lerna": "^3.22.1"
   },
   "scripts": {
+    "publish": "npx lerna publish",
+    "clean": "npx lerna clean",
+    "bootstrap": "npx lerna bootstrap",
     "test-all": "npx lerna run test"
   }
 }
