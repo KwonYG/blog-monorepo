@@ -6,4 +6,7 @@
 - front
   - next.js
 - backend
-  - nest.js
+  - nest.js(아 고민중)
+- yg-lib(ui 라이브러리)
+  - rollup
+  - storybook
