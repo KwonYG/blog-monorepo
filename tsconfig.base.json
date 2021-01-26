@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "declaration": true,
+      "declarationMap": true,
+      "sourceMap": true,
+      "esModuleInterop": true,
+      "strict": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "target": "es6",
+      "jsx": "preserve",
+      "lib": ["es6"]
+    },
+    "exclude": ["node_modules"]
+}

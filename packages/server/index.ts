@@ -1,0 +1,1 @@
+const funkyou: string = "hahha";

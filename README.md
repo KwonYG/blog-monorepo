@@ -3,5 +3,7 @@
 - monorepo
   - yarn workspace
   - lerna
-- next.js
-- nest.js
+- front
+  - next.js
+- backend
+  - nest.js
