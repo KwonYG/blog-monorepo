@@ -20,4 +20,13 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   rules: {},
+  ignorePatterns: ["**/*.test.ts"],
+  overrides: [
+    {
+        "files": ["**/*.tsx"],
+        "rules": {
+            "react/prop-types": "off"
+        }
+    }
+]
 };

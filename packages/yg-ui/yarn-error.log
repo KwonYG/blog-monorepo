@@ -1,0 +1,56 @@
+Arguments: 
+  /Users/kwonyg/.nvm/versions/node/v12.14.1/bin/node /usr/local/Cellar/yarn/1.21.1/libexec/bin/yarn.js build
+
+PATH: 
+  /Users/kwonyg/.nvm/versions/node/v12.14.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.14.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/kwonyg/Documents/git-repositories/blog-monorepo/packages/yg-ui/package.json: Unexpected token } in JSON at position 753
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+      "name": "@blog-monorepo/yg-ui",
+      "version": "1.0.0",
+      "main": "build/index.js",
+      "module": "build/index.es.js",
+      "files": ["build"],
+      "license": "MIT",
+      "scripts": {
+          "build": "rollup -c",
+          "test": "echo test $npm_package_name",
+          "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix"
+      },
+      "devDependencies": {
+          "@rollup/plugin-commonjs": "^17.0.0",
+          "@rollup/plugin-node-resolve": "^11.1.0",
+          "@types/react": "^17.0.0",
+          "rollup": "^2.38.0",
+          "rollup-plugin-peer-deps-external": "^2.2.4",
+          "rollup-plugin-typescript2": "^0.29.0",
+          "typescript": "^4.1.3"
+      },
+      "peerDependencies": {
+          "react": "^17.0.1",
+          "react-dom": "^17.0.1"
+      },
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
