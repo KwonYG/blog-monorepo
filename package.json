@@ -11,6 +11,7 @@
     "eslint": "^7.18.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
     "lerna": "^3.22.1",
     "prettier": "^2.2.1"
   },
@@ -18,6 +19,7 @@
     "publish": "npx lerna publish",
     "clean": "npx lerna clean",
     "bootstrap": "npx lerna bootstrap",
-    "test-all": "npx lerna run test"
+    "test-all": "npx lerna run test",
+    "lint": "npx lerna run lint"
   }
 }

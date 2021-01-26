@@ -4,7 +4,6 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "test": "echo test $npm_package_name",
-        "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix"
+        "test": "echo test $npm_package_name"
     }
   }
