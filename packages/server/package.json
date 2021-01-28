@@ -5,6 +5,12 @@
     "license": "MIT",
     "scripts": {
       "test": "echo test $npm_package_name",
-      "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix"
-   }
+      "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
+      "precommit": "lint-staged"
+   },
+   "lint-staged": {
+      "src/**/*.{js,ts,tsx}": [
+        "npm run lint"
+      ]
+    }
   }
