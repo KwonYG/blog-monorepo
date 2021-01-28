@@ -6,6 +6,7 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@commitlint/config-conventional": "^11.0.0",
     "@typescript-eslint/eslint-plugin": "^4.14.0",
     "@typescript-eslint/parser": "^4.14.0",
     "commitlint": "^11.0.0",
@@ -24,5 +25,11 @@
     "bootstrap": "npx lerna bootstrap",
     "test-all": "npx lerna run test",
     "lint": "npx lerna run lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lerna run --concurrency 1 --stream precommit --since HEAD --exclude-dependents",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
