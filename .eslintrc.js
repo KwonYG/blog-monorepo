@@ -14,6 +14,7 @@ module.exports = {
     },
   },
   extends: [
+    'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier/@typescript-eslint',
@@ -23,10 +24,13 @@ module.exports = {
   ignorePatterns: ["**/*.test.ts"],
   overrides: [
     {
-        "files": ["**/*.tsx"],
-        "rules": {
-            "react/prop-types": "off"
-        }
+      files: '*.js',
+    },
+    {
+      "files": ["*.tsx"],
+      "rules": {
+        "react/prop-types": "off"
+      }
     }
-]
+  ]
 };
