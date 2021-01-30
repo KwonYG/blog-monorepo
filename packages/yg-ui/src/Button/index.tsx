@@ -1,13 +1,12 @@
 import React from 'react'
+import {ButtonProps} from './Button.type'
 
-const haha = {
-  heewf: 'fewfewfe',
+const Button: React.FC<ButtonProps> = ({text, className}) => {
+  return (
+    <button data-testid="button-component" className={`button-component-${text} ${className}`}>
+      {text}
+    </button>
+  )
 }
-
-const Button: React.FC<{text: string}> = ({text}) => (
-  <button data-testid="button-component" className={`button-component-${text}`}>
-    {text}
-  </button>
-)
 
 export default Button
