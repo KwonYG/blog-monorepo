@@ -11,3 +11,6 @@ build/
 .env
 .env.build
 .env.development
+
+#yg-ui
+packages/yg-ui/style/styles.css
