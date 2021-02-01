@@ -1,7 +1,7 @@
 import React from 'react'
 import {ButtonProps} from './Button.type'
 
-const Button: React.FC<ButtonProps> = ({text, className}) => {
+function Button({text, className}: ButtonProps) {
   return (
     <button data-testid="button-component" className={`button-component-${text} ${className}`}>
       {text}
