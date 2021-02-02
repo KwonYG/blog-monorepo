@@ -5,9 +5,10 @@ import typescript from 'rollup-plugin-typescript2'
 import postcss from 'rollup-plugin-postcss'
 
 const packageJson = require('./package.json')
+const path = require('path')
 
 export default {
-  input: 'src/index.ts',
+  input: ['src/index.ts'],
   output: [
     {
       file: packageJson.main,
@@ -30,8 +31,10 @@ export default {
         path: './postcss.config.js',
       },
       extensions: ['.css'],
-      extract: true,
       minimize: true,
+      inject: {
+        insertAt: 'top',
+      },
     }),
   ],
 }
