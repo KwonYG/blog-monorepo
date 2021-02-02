@@ -1,6 +1,5 @@
 import React from 'react'
 import {ButtonProps} from './Button.type'
-import '../../style/tailwind.css'
 
 function Button({text, className}: ButtonProps) {
   const BASE_BUTTON =
