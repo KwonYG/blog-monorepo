@@ -10,3 +10,4 @@
 - yg-lib(ui 라이브러리)
   - rollup
   - storybook
+  - tailwindcss
