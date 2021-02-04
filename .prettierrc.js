@@ -4,6 +4,6 @@ module.exports = {
   singleQuote: true,
   printWidth: 100,
   tabWidth: 2,
-  bracketSpacing: false,
+  bracketSpacing: true,
   quoteProps: 'consistent',
 }
