@@ -8,6 +8,7 @@ module.exports = {
       jsx: true,
     },
   },
+  plugins: ['@typescript-eslint/eslint-plugin'],
   settings: {
     react: {
       version: 'detect',
@@ -20,17 +21,22 @@ module.exports = {
     'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
   ],
-  rules: {},
-  ignorePatterns: ["**/*.test.ts"],
+  rules: {
+    '@typescript-eslint/interface-name-prefix': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+  },
+  ignorePatterns: ['**/*.test.ts', '.eslintrc.js'],
   overrides: [
     {
       files: '*.js',
     },
     {
-      "files": ["*.tsx"],
-      "rules": {
-        "react/prop-types": "off"
-      }
-    }
-  ]
-};
+      files: ['*.tsx'],
+      rules: {
+        'react/prop-types': 'off',
+      },
+    },
+  ],
+}
