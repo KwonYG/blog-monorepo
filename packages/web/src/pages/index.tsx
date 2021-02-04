@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button} from '@blog-monorepo/yg-ui'
+import { Button } from '@blog-monorepo/yg-ui'
 
 function HomePage() {
   return (
