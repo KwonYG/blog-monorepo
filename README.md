@@ -11,3 +11,10 @@
   - rollup
   - storybook
   - tailwindcss
+- design
+  <details>
+  <summary>
+  figma
+  </summary>
+   - https://www.figma.com/file/fQcLw4IyQbMwKkCg2kiUUu/yg-lib?node-id=0%3A1
+  </details>
