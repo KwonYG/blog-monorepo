@@ -11,17 +11,16 @@ export default {
   component: Card,
 }
 
-const BASE_BUTTON =
-  'rounded outline-none shadow py-3 px-12 font-normal uppercase tracking-wider text-lg bg-gray-500'
+// const BASE_BUTTON =
+//   'rounded outline-none shadow py-3 px-12 font-normal uppercase tracking-wider text-lg bg-gray-500'
 
 const Template: Story<CardProps> = (args) => <Card {...args} />
 
 export const Card1 = Template.bind({})
-Card1.args = { className: BASE_BUTTON }
+Card1.args = {}
 
 export const Card2 = Template.bind({})
 Card2.args = {
-  className: BASE_BUTTON,
   children: (
     <>
       <CardHeader />
