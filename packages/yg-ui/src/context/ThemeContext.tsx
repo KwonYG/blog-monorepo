@@ -2,11 +2,13 @@ import React from 'react'
 import defaultTheme from '../themes/default'
 import { DefaultTheme } from '../themes/theme.types'
 
-interface ThemeContextInterface {
-  theme: DefaultTheme
+interface ThemeContextInterface<T> {
+  theme: T
 }
 
-export const ThemeContext = React.createContext<ThemeContextInterface>({ theme: defaultTheme })
+export const ThemeContext = React.createContext<ThemeContextInterface<DefaultTheme>>({
+  theme: defaultTheme,
+})
 
 interface ThemeProviderProps {
   children: React.ReactNode

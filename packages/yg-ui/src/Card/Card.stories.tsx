@@ -17,7 +17,10 @@ export default {
 const Template: Story<CardProps> = (args) => <Card {...args} />
 
 export const Card1 = Template.bind({})
-Card1.args = {}
+Card1.args = {
+  children: 'hahaha',
+  className: 'rounded-none',
+}
 
 export const Card2 = Template.bind({})
 Card2.args = {
