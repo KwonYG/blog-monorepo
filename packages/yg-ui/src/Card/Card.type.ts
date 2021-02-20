@@ -4,7 +4,7 @@ interface BaseProperty {
 }
 
 export interface CardProps extends BaseProperty {
-  backgroundImg?: React.ReactNode
+  backgroundImgUrl?: string
 }
 
 export type CardHeaderProps = BaseProperty

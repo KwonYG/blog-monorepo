@@ -4,7 +4,10 @@
  */
 export default {
   card: {
-    base: 'min-w-0 rounded-lg shadow-xs overflow-hidden',
-    default: 'bg-gray-300 dark:bg-gray-800',
+    base: 'yg-card border',
+    default: 'dark:bg-gray-800',
+  },
+  cardBody: {
+    base: 'yg-card-body p-100',
   },
 }
