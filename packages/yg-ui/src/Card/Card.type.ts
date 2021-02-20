@@ -3,7 +3,9 @@ interface BaseProperty {
   children?: React.ReactNode
 }
 
-export type CardProps = BaseProperty
+export interface CardProps extends BaseProperty {
+  backgroundImg?: React.ReactNode
+}
 
 export type CardHeaderProps = BaseProperty
 

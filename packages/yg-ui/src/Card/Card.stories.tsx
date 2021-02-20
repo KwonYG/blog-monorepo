@@ -11,24 +11,33 @@ export default {
   component: Card,
 }
 
-// const BASE_BUTTON =
-//   'rounded outline-none shadow py-3 px-12 font-normal uppercase tracking-wider text-lg bg-gray-500'
-
 const Template: Story<CardProps> = (args) => <Card {...args} />
 
-export const Card1 = Template.bind({})
-Card1.args = {
+export const BasicCard = Template.bind({})
+BasicCard.args = {
   children: 'hahaha',
-  className: 'rounded-none',
+  className: 'rounded-none w-1/4',
 }
 
-export const Card2 = Template.bind({})
-Card2.args = {
-  children: (
-    <>
-      <CardHeader />
-      <CardBody />
-      <CardFooter />
-    </>
+export const ImageCard = Template.bind({})
+ImageCard.args = {
+  children: 'hahaha',
+  className: 'rounded-none',
+  backgroundImg: (
+    <img
+      alt="유희열"
+      src="http://www.busan.com/nas/data/content/image/2017/06/21/20170621000109_0.jpg"
+    />
   ),
 }
+
+// export const Card2 = Template.bind({})
+// Card2.args = {
+//   children: (
+//     <>
+//       <CardHeader />
+//       <CardBody />
+//       <CardFooter />
+//     </>
+//   ),
+// }
