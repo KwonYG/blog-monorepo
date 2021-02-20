@@ -12,7 +12,7 @@ function CardBody({ className, children }: CardBodyProps) {
 
   const classNameToApply = classNames(baseStyle, className)
 
-  return <div className={className}>{children}</div>
+  return <div className={classNameToApply}>{children}</div>
 }
 
 export default CardBody

@@ -5,8 +5,8 @@
 export default {
   card: {
     base:
-      'yg-card rounded-lg border-4 border-gray-200 dark:bg-gray-800 w-max overflow-hidden',
-    default: '', // TODO: 카드에 줄 옵션들 생각해보기
+      'yg-card relative rounded-lg border-2 border-gray-200 dark:bg-gray-800 w-max overflow-hidden',
+    default: '', // TODO: border 굵기옵션, border 색상옵션,
   },
   cardHeader: {
     base: 'text-5xl',

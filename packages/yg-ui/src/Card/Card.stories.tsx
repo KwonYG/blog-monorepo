@@ -21,6 +21,7 @@ BasicCard.args = {
 
 export const ImageCard = Template.bind({})
 ImageCard.args = {
+  className: 'h-30',
   backgroundImgUrl:
     'http://www.busan.com/nas/data/content/image/2017/06/21/20170621000109_0.jpg',
   children: (
@@ -34,14 +35,3 @@ ImageCard.args = {
     </>
   ),
 }
-
-// export const Card2 = Template.bind({})
-// Card2.args = {
-//   children: (
-//     <>
-//       <CardHeader />
-//       <CardBody />
-//       <CardFooter />
-//     </>
-//   ),
-// }

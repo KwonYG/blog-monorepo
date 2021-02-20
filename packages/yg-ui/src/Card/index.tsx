@@ -30,10 +30,10 @@ export interface BgTagProps {
 }
 
 const BgTag = ({ backgroundImgUrl, children }: BgTagProps) => (
-  <div className="relative">
+  <>
     <img src={backgroundImgUrl} alt="" style={{ margin: 0 }} />
     <div className="absolute bottom-0 left-0 ">{children}</div>
-  </div>
+  </>
 )
 
 export default Card
