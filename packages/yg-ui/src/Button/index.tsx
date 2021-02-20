@@ -6,7 +6,10 @@ function Button({ text, className }: ButtonProps) {
     'rounded outline-none shadow py-3 px-12 font-normal uppercase tracking-wider text-lg bg-gray-500'
 
   return (
-    <button data-testid="button-component" className={className ? className : BASE_BUTTON}>
+    <button
+      data-testid="button-component"
+      className={className ? className : BASE_BUTTON}
+    >
       {text}
     </button>
   )

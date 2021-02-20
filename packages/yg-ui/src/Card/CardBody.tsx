@@ -5,13 +5,12 @@ import { ThemeContext } from '../context/ThemeContext'
 
 function CardBody({ className, children }: CardBodyProps) {
   const {
-    theme: { card },
+    theme: { cardBody },
   } = useContext(ThemeContext)
 
-  const baseStyle = card.base
-  const defaultStyle = card.default
+  const baseStyle = cardBody.base
 
-  const classNameToApply = classNames(baseStyle, defaultStyle, className)
+  const classNameToApply = classNames(baseStyle, className)
 
   return <div className={className}>{children}</div>
 }

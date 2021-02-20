@@ -7,6 +7,9 @@ export default {
     base: 'yg-card border',
     default: 'dark:bg-gray-800',
   },
+  cardHeader: {
+    base: 'text-5xl',
+  },
   cardBody: {
     base: 'yg-card-body p-100',
   },

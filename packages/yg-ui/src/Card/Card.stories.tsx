@@ -21,13 +21,16 @@ BasicCard.args = {
 
 export const ImageCard = Template.bind({})
 ImageCard.args = {
-  className: 'rounded-none border h-10',
+  className: 'rounded-none border h-72',
   backgroundImgUrl:
     'http://www.busan.com/nas/data/content/image/2017/06/21/20170621000109_0.jpg',
   children: (
-    <CardBody>
-      <p>fawmkfnejkawnfjkewanfaejwkn</p>
-    </CardBody>
+    <>
+      <CardHeader />
+      <CardBody>
+        <p>fawmkfnejkawnfjkewanfaejwkn</p>
+      </CardBody>
+    </>
   ),
 }
 

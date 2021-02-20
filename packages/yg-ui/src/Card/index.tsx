@@ -33,6 +33,7 @@ const BgTag = ({ backgroundImgUrl, children }: BgTagProps) => (
   <div
     style={{
       backgroundImage: `url("${backgroundImgUrl}")`,
+      backgroundSize: '100% 100%',
       width: '100%',
       height: '100%',
     }}
