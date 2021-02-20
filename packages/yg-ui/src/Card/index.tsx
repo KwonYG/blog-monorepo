@@ -30,15 +30,9 @@ export interface BgTagProps {
 }
 
 const BgTag = ({ backgroundImgUrl, children }: BgTagProps) => (
-  <div
-    style={{
-      backgroundImage: `url("${backgroundImgUrl}")`,
-      backgroundSize: '100% 100%',
-      width: '100%',
-      height: '100%',
-    }}
-  >
-    {children}
+  <div className="relative">
+    <img src={backgroundImgUrl} alt="" style={{ margin: 0 }} />
+    <div className="absolute bottom-0 left-0 ">{children}</div>
   </div>
 )
 

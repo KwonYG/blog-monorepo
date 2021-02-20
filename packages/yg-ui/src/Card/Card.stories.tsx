@@ -16,19 +16,20 @@ const Template: Story<CardProps> = (args) => <Card {...args} />
 export const BasicCard = Template.bind({})
 BasicCard.args = {
   children: 'hahaha',
-  className: 'border w-1/4',
+  className: '',
 }
 
 export const ImageCard = Template.bind({})
 ImageCard.args = {
-  className: 'rounded-none border h-72',
   backgroundImgUrl:
     'http://www.busan.com/nas/data/content/image/2017/06/21/20170621000109_0.jpg',
   children: (
     <>
-      <CardHeader />
+      <CardHeader className="w-15 break-words text-white">
+        유희열 미소는 천사미소
+      </CardHeader>
       <CardBody>
-        <p>fawmkfnejkawnfjkewanfaejwkn</p>
+        <p className="text-white">이건 거의 알비급..</p>
       </CardBody>
     </>
   ),
