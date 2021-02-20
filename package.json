@@ -30,7 +30,8 @@
     "clean": "npx lerna clean",
     "bootstrap": "npx lerna bootstrap",
     "test-all": "npx lerna run test",
-    "lint": "npx lerna run lint"
+    "lint": "npx lerna run lint",
+    "storybook:build": "npx lerna run storybook:export"
   },
   "husky": {
     "hooks": {
