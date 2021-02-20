@@ -1,7 +1,7 @@
 import { DeepMergeTwoTypes } from './type'
 
 // inspired by https://gist.github.com/ahtcx/0cd94e62691f539160b32ecda18af3d6#gistcomment-3588880
-function mergeDeep<A, B>(target: any, source: any): DeepMergeTwoTypes<A, B> {
+export function mergeDeep<A, B>(target: any, source: any): DeepMergeTwoTypes<A, B> {
   for (const key of Object.keys(source)) {
     const currenttarget = target[key]
     const currentsource = source[key]
