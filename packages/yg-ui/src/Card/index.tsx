@@ -8,13 +8,8 @@ function Card({ className, children, backgroundImgUrl }: CardProps) {
     theme: { card },
   } = useContext(ThemeContext)
 
-  const baseStyle = card.base
-  const defaultStyle = card.default
-
-  const classNameToApply = classNames(baseStyle, defaultStyle, className)
-
   return (
-    <div className={classNameToApply}>
+    <div className={`yg-card ${className}`}>
       {backgroundImgUrl ? (
         <BgTag backgroundImgUrl={backgroundImgUrl}>{children}</BgTag>
       ) : (
@@ -31,7 +26,11 @@ export interface BgTagProps {
 
 const BgTag = ({ backgroundImgUrl, children }: BgTagProps) => (
   <>
-    <img src={backgroundImgUrl} alt="" style={{ margin: 0 }} />
+    <img
+      src={backgroundImgUrl}
+      alt=""
+      style={{ marginLeft: 'auto', marginRight: 'auto' }}
+    />
     <div className="absolute bottom-0 left-0 ">{children}</div>
   </>
 )
