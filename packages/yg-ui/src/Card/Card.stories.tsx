@@ -14,7 +14,7 @@ const Template: Story<CardProps> = (args) => <Card {...args} />
 
 export const BasicCard = Template.bind({})
 BasicCard.args = {
-  className: 'p-4',
+  className: '',
   children: (
     <>
       <CardHeader className="mb-4">기본 카드 제목</CardHeader>

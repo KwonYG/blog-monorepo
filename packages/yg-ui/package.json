@@ -59,7 +59,6 @@
   },
   "dependencies": {
     "autoprefixer": "^10.2.4",
-    "classnames": "^2.2.6",
     "postcss": "^8.2.4",
     "postcss-import": "^14.0.0"
   }
