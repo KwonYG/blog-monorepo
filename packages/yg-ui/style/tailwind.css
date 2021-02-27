@@ -9,4 +9,7 @@
   .yg-card {
     @apply p-3 rounded-lg border-2 border-gray-200 w-max overflow-hidden;
   }
+  .yg-badge {
+    @apply p-1 rounded-full bg-blue-400 text-white text-xs;
+  }
 }

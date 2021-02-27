@@ -1,8 +1,8 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { BadgeProps } from './Badge.type'
 
-function CardBody({ className, text, children }: BadgeProps) {
-  return <div className={`yg-card-body ${className}`}>{children}</div>
+function Badge({ className, children }: BadgeProps) {
+  return <span className={`yg-badge ${className}`}>{children}</span>
 }
 
-export default CardBody
+export default Badge

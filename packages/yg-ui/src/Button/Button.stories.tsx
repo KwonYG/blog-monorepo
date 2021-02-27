@@ -4,7 +4,7 @@ import { ButtonProps } from './Button.type'
 import { Story } from '@storybook/react'
 
 export default {
-  title: 'Button(테스트용)',
+  title: 'Button',
   component: Button,
 }
 
