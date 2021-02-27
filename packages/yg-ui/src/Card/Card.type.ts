@@ -5,6 +5,7 @@ interface BaseProperty {
 
 export interface CardProps extends BaseProperty {
   backgroundImgUrl?: string
+  backgroundPosition?: string
 }
 
 export type CardHeaderProps = BaseProperty

@@ -7,9 +7,6 @@
     @apply bg-blue-700 px-3 py-1;
   }
   .yg-card {
-    @apply p-4 relative rounded-lg border-2 border-gray-200 w-max overflow-hidden;
-  }
-  .yg-card-header {
-    @apply text-5xl;
+    @apply p-3 rounded-lg border-2 border-gray-200 w-max overflow-hidden;
   }
 }

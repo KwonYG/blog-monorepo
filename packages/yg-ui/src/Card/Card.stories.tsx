@@ -17,7 +17,9 @@ BasicCard.args = {
   className: '',
   children: (
     <>
-      <CardHeader className="mb-4">기본 카드 제목</CardHeader>
+      <CardHeader>
+        <h1 className="text-4xl"> 기본 카드 제목</h1>
+      </CardHeader>
       <CardBody>
         <p>기본 카드 바디</p>
       </CardBody>
@@ -33,18 +35,19 @@ BasicCard.argTypes = {
 
 export const ImageCard = Template.bind({})
 ImageCard.args = {
-  className: 'h-30',
+  className: 'relative w-72 h-96',
   backgroundImgUrl:
     'http://www.busan.com/nas/data/content/image/2017/06/21/20170621000109_0.jpg',
+  backgroundPosition: 'center',
   children: (
-    <>
-      <CardHeader className="px-4 w-15 break-words text-white">
-        유희열 미소는 천사미소
+    <div className="absolute bottom-0">
+      <CardHeader className="mb-2 break-words text-white">
+        <h1 className="text-4xl">유희열 미소는 천사미소</h1>
       </CardHeader>
-      <CardBody className="p-4">
+      <CardBody>
         <p className="text-white">이건 거의 알비급..</p>
       </CardBody>
-    </>
+    </div>
   ),
 }
 ImageCard.argTypes = {
