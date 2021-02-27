@@ -13,5 +13,5 @@ const Template: Story<BadgeProps> = (args) => <Badge {...args} />
 export const BasicBadge = Template.bind({})
 BasicBadge.args = {
   className: '',
-  children: 'foo 뱃지',
+  children: 'bar 뱃지',
 }

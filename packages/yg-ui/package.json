@@ -16,8 +16,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "prepublishOnly": "npm run build",
-    "precommit": "lint-staged",
-    "chromatic": "npx chromatic --project-token f8fded386d25"
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "src/**/*.{js,ts,tsx}": [
