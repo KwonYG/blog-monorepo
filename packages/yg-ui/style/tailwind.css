@@ -4,7 +4,7 @@
 
 @layer components {
   .yg-button {
-    @apply bg-blue-700 px-3 py-1;
+    @apply px-3 py-1 bg-blue-500 text-white rounded-lg;
   }
   .yg-card {
     @apply p-3 rounded-lg border-2 border-gray-200 w-max overflow-hidden;

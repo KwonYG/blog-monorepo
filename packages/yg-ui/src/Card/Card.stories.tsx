@@ -35,7 +35,7 @@ BasicCard.argTypes = {
 
 export const ImageCard = Template.bind({})
 ImageCard.args = {
-  className: 'relative w-72 h-96',
+  className: 'relative w-72 h-96 rounded-lg',
   backgroundImgUrl:
     'http://www.busan.com/nas/data/content/image/2017/06/21/20170621000109_0.jpg',
   backgroundPosition: 'center',
