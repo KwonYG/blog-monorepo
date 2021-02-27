@@ -1,10 +1,10 @@
 import React from 'react'
 import { ButtonProps } from './Button.type'
 
-function Button({ text, className }: ButtonProps) {
+function Button({ className, children, onClick }: ButtonProps) {
   return (
-    <button data-testid="button-component" className={`yg-button ${className}`}>
-      {text}
+    <button className={`yg-button ${className}`} onClick={onClick}>
+      {children}
     </button>
   )
 }

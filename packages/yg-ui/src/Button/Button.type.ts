@@ -1,4 +1,6 @@
 export interface ButtonProps {
-  text: string
+  text?: string
   className?: string
+  onClick?: React.MouseEventHandler<HTMLElement>
+  children?: React.ReactNode
 }

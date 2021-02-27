@@ -11,7 +11,7 @@ export default {
 const Template: Story<ButtonProps> = (args) => <Button {...args} />
 
 export const Button1 = Template.bind({})
-Button1.args = { text: '알비 굿', className: '' }
+Button1.args = { className: '', children: '알비 굿' }
 
 export const Button2 = Template.bind({})
-Button2.args = { text: '니뭐ㅎ', className: '' }
+Button2.args = { className: '', children: '니뭐ㅎ' }
